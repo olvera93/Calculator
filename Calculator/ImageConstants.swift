@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-let buttonsBackground = Color("buttonsBackground")
+let buttonBackground = Color("buttonBackground")
 let foregroundDigitsColor = Color("foregroundDigits")
 let foregroundRightButtonsColor = Color("foregroundRightButtons")
 let foregroundTopButtonsColor = Color("foregroundTopButtons")

@@ -16,6 +16,7 @@
 		280E8A5029E49694007F6DD1 /* ComputationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280E8A4F29E49694007F6DD1 /* ComputationView.swift */; };
 		280E8A5229E4984F007F6DD1 /* CalcsButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280E8A5129E4984F007F6DD1 /* CalcsButtonsView.swift */; };
 		280E8A5429E4A0C8007F6DD1 /* Enumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280E8A5329E4A0C8007F6DD1 /* Enumerations.swift */; };
+		280E8A5629E4A866007F6DD1 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280E8A5529E4A866007F6DD1 /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		280E8A4F29E49694007F6DD1 /* ComputationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputationView.swift; sourceTree = "<group>"; };
 		280E8A5129E4984F007F6DD1 /* CalcsButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcsButtonsView.swift; sourceTree = "<group>"; };
 		280E8A5329E4A0C8007F6DD1 /* Enumerations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumerations.swift; sourceTree = "<group>"; };
+		280E8A5529E4A866007F6DD1 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				280E8A4F29E49694007F6DD1 /* ComputationView.swift */,
 				280E8A5129E4984F007F6DD1 /* CalcsButtonsView.swift */,
 				280E8A5329E4A0C8007F6DD1 /* Enumerations.swift */,
+				280E8A5529E4A866007F6DD1 /* ButtonView.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 			files = (
 				280E8A5429E4A0C8007F6DD1 /* Enumerations.swift in Sources */,
 				280E8A3E29E47F0C007F6DD1 /* MainCalculatorView.swift in Sources */,
+				280E8A5629E4A866007F6DD1 /* ButtonView.swift in Sources */,
 				280E8A4A29E48DB8007F6DD1 /* ImageConstants.swift in Sources */,
 				280E8A5029E49694007F6DD1 /* ComputationView.swift in Sources */,
 				280E8A5229E4984F007F6DD1 /* CalcsButtonsView.swift in Sources */,

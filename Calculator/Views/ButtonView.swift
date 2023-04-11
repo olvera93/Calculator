@@ -12,6 +12,7 @@ struct ButtonView: View {
     let calcButton: CalcButton
     let fgColor: Color
     let bgColor: Color
+    let width: CGFloat
     
     var systemImage: String? {
         let value = calcButton.rawValue
@@ -24,14 +25,19 @@ struct ButtonView: View {
         return value.contains("IMG") ? nil : value
     }
     
-    let buttonDim: CGFloat = UIDevice.isIPad ? UIScreen
-        .main.bounds.width / 6 : UIScreen
-        .main.bounds.width / 5
+    var buttonDim: CGFloat {
+        UIDevice.isIPad ? width / 6 : width / 5
+    }
     
     var body: some View {
         ZStack {
-            Text(text ?? "")
-            Image(systemName: systemImage ?? "")
+            if let text = text {
+                Text(text)
+            }
+            
+            if let systemImage = systemImage {
+                Image(systemName: systemImage)
+            }
         }
         .font(UIDevice.isIPad ? .largeTitle : .title2)
         .fontWeight(UIDevice.isIPad ? .heavy : .semibold)
@@ -46,6 +52,6 @@ struct ButtonView: View {
 
 struct ButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonView(calcButton: .one, fgColor: foregroundDigitsColor, bgColor: buttonBackground)
+        ButtonView(calcButton: .one, fgColor: foregroundDigitsColor, bgColor: buttonBackground, width: 375)
     }
 }

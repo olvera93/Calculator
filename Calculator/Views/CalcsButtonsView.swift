@@ -22,6 +22,7 @@ struct CalcsButtonsView: View {
     
     @Binding var currentComputation: String
     @Binding var mainResult: String
+    let width: CGFloat
     
     let buttondData: [RowOfCalcButtonsModel] = [
         RowOfCalcButtonsModel(row: [
@@ -91,7 +92,7 @@ struct CalcsButtonsView: View {
                             ButtonView(
                                 calcButton: calcButtonModel.calcButton,
                                 fgColor: calcButtonModel.color,
-                                bgColor: buttonBackground)
+                                bgColor: buttonBackground, width: width)
                         })
                     }
                 }
@@ -196,6 +197,6 @@ struct CalcsButtonsView: View {
 
 struct CalcsButtonsView_Previews: PreviewProvider {
     static var previews: some View {
-        CalcsButtonsView(currentComputation: .constant("5 + 1"), mainResult: .constant("6"))
+        CalcsButtonsView(currentComputation: .constant("5 + 1"), mainResult: .constant("6"), width: 375)
     }
 }

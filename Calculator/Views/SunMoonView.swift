@@ -14,13 +14,14 @@ struct SunMoonView: View {
     var body: some View {
         HStack(spacing: 30) {
             Image(systemName: "sun.min")
-                .imageScale(.large)
                 .foregroundColor(lighMode ? sunOrMoonSelectedColor : sunOrMoonNotSelectedColor)
         
             Image(systemName: "moon")
-                .imageScale(.large)
                 .foregroundColor(lighMode ? sunOrMoonNotSelectedColor : sunOrMoonSelectedColor)
         }.padding()
+            .imageScale(.large)
+            .font(UIDevice.isIPad ? .title : .body)
+            .fontWeight(UIDevice.isIPad ? .semibold : .regular)
             .background(secondaryBackgroundColor)
             .cornerRadius(20)
     }

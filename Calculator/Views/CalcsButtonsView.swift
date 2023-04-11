@@ -98,7 +98,7 @@ struct CalcsButtonsView: View {
             }
         }
         .padding()
-        .background(secondaryBackgroundColor.cornerRadius(20))
+        .background(secondaryBackgroundColor.cornerRadius(UIDevice.isIPad ? 50 : 20))
     }
     
     func buttonPressed(calcButton: CalcButton) {
